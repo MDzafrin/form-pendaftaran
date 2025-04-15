@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('prodi');
             $table->string('email');
             $table->string('phone');
-            $table->string('jenis_lomba');  
+            $table->string('jenis_lomba');
+            $table->string('judul_lomba');  
             $table->timestamps();
         });
     }
