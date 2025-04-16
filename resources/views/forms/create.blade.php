@@ -89,6 +89,10 @@
     <div class="col-12">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
+
+    <form action="{{ route('forms.store') }}" method="POST">
+        @csrf
+       
     
 
        

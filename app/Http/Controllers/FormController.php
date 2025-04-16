@@ -28,7 +28,14 @@ class FormController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validate the input
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:15',
+        ]);
+        //create a new form entry
+        Form::create($request->all());
     }
 
     /**
