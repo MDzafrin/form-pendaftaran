@@ -4,8 +4,9 @@
 
 <h1>FORMULIR PENDAFTARAN</h1>
 
-<!--Fungsi Nama-->
+
 <form>
+    <!--Fungsi Nama-->
     <div class="mb-3">
         <legend for="nama-lengkap" class="form-label">Nama Lengkap</legend>
         <input type="nama" class="form-control" id="nama-lengkap" aria-describeby="TolongNama">
@@ -64,14 +65,14 @@
     
     <!--Checkbox Pilihan Lomba-->
     <legend for="pilihan-lomba" class="form-label">Pilih Lomba</legend>
-    <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
-    <label class="btn" for="option5">Sawing</label>
+    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+    <label class="btn btn-outline-success" for="success-outlined">Sawing</label>
 
-    <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
-    <label class="btn" for="option6">Welding</label>
+    <input type="radio" class="btn-check" name="options-outlined" id="succed-outlined" autocomplete="off">
+    <label class="btn btn-outline-success" for="succed-outlined">Welding</label>
 
-    <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
-    <label class="btn" for="option7">Kerajinan Recycle</label>
+    <input type="radio" class="btn-check" name="options-outlined" id="succed-outlined" autocomplete="off">
+    <label class="btn btn-outline-success" for="succed-outlined">Kerajinan Recycle</label>
 
     <!--Upload Profile picture-->
     <fieldset>
