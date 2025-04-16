@@ -11,13 +11,13 @@
         <legend for="nama-lengkap" class="form-label">Nama Lengkap</legend>
         <input type="nama" class="form-control" id="nama-lengkap" aria-describeby="TolongNama">
     </div>
-    <!--Validasi Nama-->
+    <!--Validasi Nama
     <div class="form-text">Tolong Masukkan Nama Lengkap Anda</div>
     <div class="valid-tooltip">
         Looks good!
-    </div>
+    </div>-->
 
-    <!--Fungsi Jenis Kelamin-->
+    <!--Fungsi Jenis Kelamin
     <form action="/action_page.php">
     <fieldset>    
     <legend for="jenis-kelamin" class="form-label">Jenis Kelamin</legend>
@@ -29,9 +29,9 @@
         <label for="radioDefault2"><input id="perempuan" type="radio" name="radio" class="inline" />Perempuan</label>
     </div>
     </fieldset>
-    </form>
+    </form>-->
 
-    <!--Fungsi Pemilihan Prodi Dan Tingkat-->
+    <!--Fungsi Pemilihan Prodi Dan Tingkat
     <fieldset>
     <legend for="tingkat-dan-prodi" class="form-label">Pilih Tingkat Dan Prodi </legend>
     <select class="form-select form-select-lg mb-3" aria-label="Large select example">
@@ -47,7 +47,7 @@
         <option value="2">2</option>
         <option value="3">3</option>
     </select>
-    </fieldset>
+    </fieldset>-->
 
     <!--Fungsi Email-->
     <fieldset>
@@ -68,20 +68,22 @@
     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
     <label class="btn btn-outline-success" for="success-outlined">Sawing</label>
 
-    <input type="radio" class="btn-check" name="options-outlined" id="succed-outlined" autocomplete="off">
-    <label class="btn btn-outline-success" for="succed-outlined">Welding</label>
+    <input type="radio" class="btn-check" name="options-outlined" id="option0" autocomplete="off">
+    <label class="btn btn-outline-success" for="option0">Welding</label>
+    
+    <input type="radio" class="btn-check" name="options-outlined" id="option1" autocomplete="off">
+    <label class="btn btn-outline-success" for="option1">Kerajinan Recycle</label>
 
-    <input type="radio" class="btn-check" name="options-outlined" id="succed-outlined" autocomplete="off">
-    <label class="btn btn-outline-success" for="succed-outlined">Kerajinan Recycle</label>
+    
 
-    <!--Upload Profile picture-->
+    <!--Upload Profile picture
     <fieldset>
-        <legend for="upload-profile" class="form-label">Upload Profile Picture</legend>
-    <div class="mb-3">
+        <legend for="upload-profile" class="form-label">Upload Foto KTM</legend>
+    <div class="mb-3"> 
         <label for="formFile" class="form-label"></label>
         <input class="form-control" type="file" id="formFile">
     </div>
-    </fieldset>
+    </fieldset>-->
 
     <!--Submit Button-->
     <div class="col-12">
