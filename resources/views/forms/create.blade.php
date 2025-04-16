@@ -39,7 +39,7 @@
         <option value="2">Teknologi Rekayasa Mekatronika</option>
         <option value="3">Teknik Mesin Industri</option>
     </select>
-
+    <label for="tingkat" class="form-label">Tingkat</label>
     <select class="form-select form-select-sm" aria-label="Small select example">
         <option selected>Pilih Tingkat</option>
         <option value="1">1</option>
