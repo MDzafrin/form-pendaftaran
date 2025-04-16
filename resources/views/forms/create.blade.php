@@ -63,7 +63,7 @@
         <input type="text" class="form-control" id="no-hp" aria-describedby="TolongNoHP">
     </div>
     
-    <!--Checkbox Pilihan Lomba-->
+    <!--Checkbox Pilihan Lomba
     <legend for="pilihan-lomba" class="form-label">Pilih Lomba</legend>
     <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
     <label class="btn btn-outline-success" for="success-outlined">Sawing</label>
@@ -72,7 +72,7 @@
     <label class="btn btn-outline-success" for="option0">Welding</label>
     
     <input type="radio" class="btn-check" name="options-outlined" id="option1" autocomplete="off">
-    <label class="btn btn-outline-success" for="option1">Kerajinan Recycle</label>
+    <label class="btn btn-outline-success" for="option1">Kerajinan Recycle</label>-->
 
     
 
