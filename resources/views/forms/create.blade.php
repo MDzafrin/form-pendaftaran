@@ -10,6 +10,11 @@
         <legend for="nama-lengkap" class="form-label">Nama Lengkap</legend>
         <input type="nama" class="form-control" id="nama-lengkap" aria-describeby="TolongNama">
     </div>
+    <!--Validasi Nama-->
+    <div class="form-text">Tolong Masukkan Nama Lengkap Anda</div>
+    <div class="valid-tooltip">
+        Looks good!
+    </div>
 
     <!--Fungsi Jenis Kelamin-->
     <form action="/action_page.php">
@@ -43,7 +48,7 @@
     </select>
     </fieldset>
 
-    
+    <!--Fungsi Email-->
     <fieldset>
         <div class="mb-3">
             <legend for="exampleFormControlInput1" class="form-label">Email address</legend>
@@ -51,6 +56,39 @@
         </div>
     </fieldset>
     
+    <!--Fungsi No HP-->
+    <div>
+        <legend for="no-hp" class="form-label">No HP</legend>
+        <input type="text" class="form-control" id="no-hp" aria-describedby="TolongNoHP">
+    </div>
+    
+    <!--Checkbox Pilihan Lomba-->
+    <legend for="pilihan-lomba" class="form-label">Pilih Lomba</legend>
+    <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+    <label class="btn" for="option5">Sawing</label>
+
+    <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+    <label class="btn" for="option6">Welding</label>
+
+    <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+    <label class="btn" for="option7">Kerajinan Recycle</label>
+
+    <!--Upload Profile picture-->
+    <fieldset>
+        <legend for="upload-profile" class="form-label">Upload Profile Picture</legend>
+    <div class="mb-3">
+        <label for="formFile" class="form-label"></label>
+        <input class="form-control" type="file" id="formFile">
+    </div>
+    </fieldset>
+
+    <!--Submit Button-->
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    
+
+       
 
 </form>
 
