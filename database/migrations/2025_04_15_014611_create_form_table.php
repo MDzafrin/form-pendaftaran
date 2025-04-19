@@ -14,12 +14,8 @@ return new class extends Migration
         Schema::create('form', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('jenis_kelamin');
-            $table->string('tingkat');
-            $table->string('prodi');
             $table->string('email');
-            $table->string('phone');
-            $table->string('jenis_lomba'); 
+            $table->string('phone'); 
             $table->timestamps();
         });
     }

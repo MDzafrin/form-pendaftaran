@@ -1,15 +1,16 @@
-@extends('forms.layout');
+@extends('forms.layout')
 
 @section('content')
 
 <h1>FORMULIR PENDAFTARAN</h1>
 
 
-<form>
+<form action="{{ route('forms.store') }}" method="POST">
+    @csrf   
     <!--Fungsi Nama-->
     <div class="mb-3">
         <legend for="nama-lengkap" class="form-label">Nama Lengkap</legend>
-        <input type="nama" class="form-control" id="nama-lengkap" aria-describeby="TolongNama">
+        <textarea name= "name" style="height:40px" class="form-control" id="name" placeholder="Nama Lengkap"></textarea>
     </div>
     <!--Validasi Nama
     <div class="form-text">Tolong Masukkan Nama Lengkap Anda</div>
@@ -53,14 +54,14 @@
     <fieldset>
         <div class="mb-3">
             <legend for="exampleFormControlInput1" class="form-label">Email address</legend>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@example.com">
+            <input name= "email" type="email" class="form-control" id="email" placeholder="nama@example.com">
         </div>
     </fieldset>
     
     <!--Fungsi No HP-->
     <div>
         <legend for="no-hp" class="form-label">No HP</legend>
-        <input type="text" class="form-control" id="no-hp" aria-describedby="TolongNoHP">
+        <input name= "phone" type="text" class="form-control" id="phone" placeholder="WA Aktif">
     </div>
     
     <!--Checkbox Pilihan Lomba

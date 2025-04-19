@@ -25,17 +25,26 @@ class FormController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * 
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response 
      */
     public function store(Request $request)
     {
         //validate the input
         $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:15',
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required'
         ]);
-        //create a new form entry
+
+        //create a new form in the database
         Form::create($request->all());
+
+        //redirect to the form index page with a success message
+        return redirect()->route('forms.index')->with('success', 'Form submitted successfully!');
+
+
     }
 
     /**
