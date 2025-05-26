@@ -64,7 +64,7 @@ class FormController extends Controller
      */
     public function edit(Form $form)
     {
-        //
+        return view('forms.edit', compact('form'));
     }
 
     /**
@@ -72,7 +72,16 @@ class FormController extends Controller
      */
     public function update(Request $request, Form $form)
     {
-        //
+        //validate the input
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+        ]);
+        //update the form in the database
+        $form->update($request->all());
+        //redirect to the form index page with a success message
+        return redirect()->route('forms.index')->with('success', 'Form updated successfully!');
     }
 
     /**
