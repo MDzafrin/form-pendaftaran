@@ -68,7 +68,7 @@
     <section class="hero">
         <div class="container">
             <h1>EVENT MANUFAKTUR COMPETITION</h1>
-            <p class="lead">“Jadilah bagian dari perubahan Masa Depan.”</p>
+            <p class="lead">“Eksplorasi Teknologi Manufaktur & Jadilah bagian dari perubahan Masa Depan.”</p>
         </div>
     </section>
 
