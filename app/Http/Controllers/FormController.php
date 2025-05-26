@@ -12,7 +12,11 @@ class FormController extends Controller
      */
     public function index()
     {
-        //
+        //Retrieve the lastest forms from the database and paginate them
+        $forms = Form::latest()->paginate(3);
+
+        //Pass the forms to the view
+        return view('forms.index', compact('forms'))->with(request()->input('page'));
     }
 
     /**
@@ -35,7 +39,7 @@ class FormController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required',
-            'phone' => 'required'
+            'phone' => 'required',
         ]);
 
         //create a new form in the database
