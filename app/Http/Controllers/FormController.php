@@ -89,6 +89,11 @@ class FormController extends Controller
      */
     public function destroy(Form $form)
     {
-        //
+        //delete the product
+        $form->delete();
+
+        //redirect the user and display success message
+        return redirect()->route('forms.index')->with('success','Form deleted successfully');
+
     }
 }
