@@ -56,7 +56,7 @@ class FormController extends Controller
      */
     public function show(Form $form)
     {
-        //
+        return view('forms.show', compact('form'));
     }
 
     /**
