@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('tingkat');
             $table->string('email');
             $table->string('phone');
-            $table->string('lomba'); 
+            $table->string('lomba');
+            $table->string('file');
             $table->timestamps();
         });
     }

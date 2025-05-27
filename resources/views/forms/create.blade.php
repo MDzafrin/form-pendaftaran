@@ -79,14 +79,14 @@
 
     
 
-    <!--Upload Profile picture
+    <!--Upload Profile picture-->
     <fieldset>
-        <legend for="upload-profile" class="form-label">Upload Foto KTM</legend>
+        <legend for="upload-profile" class="form-label pt-3" >Upload Foto KTM</legend>
     <div class="mb-3"> 
         <label for="formFile" class="form-label"></label>
-        <input class="form-control" type="file" id="formFile">
+        <input class="form-control" type="file" name="file" id="formFile">
     </div>
-    </fieldset>-->
+    </fieldset>
 
     <!--Submit Button-->
     <div class="col-12 pt-5">
