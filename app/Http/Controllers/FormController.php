@@ -43,6 +43,7 @@ class FormController extends Controller
             'tingkat'=> 'required',
             'email' => 'required',
             'phone' => 'required',
+            'lomba' => 'required',
             
         ]);
 

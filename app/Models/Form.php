@@ -16,6 +16,7 @@ class Form extends Model
         'tingkat',
         'email',
         'phone',
+        'lomba',
     ];
     
 }

@@ -10,7 +10,7 @@
     <!--Fungsi Nama-->
     <div class="mb-3">
         <legend for="nama-lengkap" class="form-label">Nama Lengkap</legend>
-        <textarea name= "name" style="height:40px" class="form-control" id="name" placeholder="Nama Lengkap"></textarea>
+        <input name= "name" style="height:40px" class="form-control" id="name" placeholder="Nama Lengkap">
     </div>
     <!--Validasi Nama
     <div class="form-text">Tolong Masukkan Nama Lengkap Anda</div>
@@ -22,11 +22,11 @@
     <fieldset>    
     <legend for="jenis-kelamin" class="form-label">Jenis Kelamin</legend>
     <div class="form-check">
-        <label for="radioDefault1"><input id="laki-laki" value="male" type="radio" name="gender" class="inline" checked/>Laki-Laki</label>
+        <label for="radioDefault1"><input id="laki-laki" value="Pria" type="radio" name="gender" class="inline" checked/>Laki-Laki</label>
     </div>
 
     <div class="form-check">
-        <label for="radioDefault2"><input id="perempuan" value="female" type="radio" name="gender" class="inline" />Perempuan</label>
+        <label for="radioDefault2"><input id="perempuan" value="Wanita" type="radio" name="gender" class="inline" />Perempuan</label>
     </div>
     </fieldset>
     
@@ -66,16 +66,16 @@
         <input name= "phone" type="text" class="form-control" id="phone" placeholder="WA Aktif">
     </div>
     
-    <!--Checkbox Pilihan Lomba
+    <!--Checkbox Pilihan Lomba-->
     <legend for="pilihan-lomba" class="form-label">Pilih Lomba</legend>
-    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+    <input type="radio" class="btn-check" name="lomba" value="Sawing" id="success-outlined" autocomplete="off">
     <label class="btn btn-outline-success" for="success-outlined">Sawing</label>
 
-    <input type="radio" class="btn-check" name="options-outlined" id="option0" autocomplete="off">
+    <input type="radio" class="btn-check" name="lomba"  value="Welding" id="option0" autocomplete="off">
     <label class="btn btn-outline-success" for="option0">Welding</label>
     
-    <input type="radio" class="btn-check" name="options-outlined" id="option1" autocomplete="off">
-    <label class="btn btn-outline-success" for="option1">Kerajinan Recycle</label>-->
+    <input type="radio" class="btn-check" name="lomba" value="Kerajinan Recycle" id="option1" autocomplete="off">
+    <label class="btn btn-outline-success" for="option1">Kerajinan Recycle</label>
 
     
 

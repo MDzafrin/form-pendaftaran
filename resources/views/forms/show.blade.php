@@ -42,4 +42,10 @@
             {{ $form->phone }}  
         </div>
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Jenis Lomba:</strong>
+            {{ $form->lomba }}
+        </div>
+    </div>
 @endsection

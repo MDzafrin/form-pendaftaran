@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('prodi');
             $table->string('tingkat');
             $table->string('email');
-            $table->string('phone'); 
+            $table->string('phone');
+            $table->string('lomba'); 
             $table->timestamps();
         });
     }
