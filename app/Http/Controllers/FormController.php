@@ -39,6 +39,8 @@ class FormController extends Controller
         $request->validate([
             'name' => 'required',
             'gender'=> 'required',
+            'prodi'=> 'required',
+            'tingkat'=> 'required',
             'email' => 'required',
             'phone' => 'required',
             

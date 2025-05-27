@@ -31,23 +31,26 @@
     </fieldset>
     
 
-    <!--Fungsi Pemilihan Prodi Dan Tingkat
+    <!--Fungsi Pemilihan Prodi Dan Tingkat-->
     <fieldset>
     <legend for="tingkat-dan-prodi" class="form-label">Pilih Tingkat Dan Prodi </legend>
-    <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+    <select class="form-select form-select-lg mb-3" aria-label="Large select example" name="prodi">
         <option selected>Pilih Prodi</option>
-        <option value="1">Manajemen Industri</option>
-        <option value="2">Teknologi Rekayasa Mekatronika</option>
-        <option value="3">Teknik Mesin Industri</option>
+        <option value="MI">Manajemen Industri</option>
+        <option value="TRM">Teknologi Rekayasa Mekatronika</option>
+        <option value="TMI">Teknik Mesin Industri</option>
     </select>
-    <label for="tingkat" class="form-label">Tingkat</label>
-    <select class="form-select form-select-sm" aria-label="Small select example">
-        <option selected>Pilih Tingkat</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-    </select>
-    </fieldset>-->
+    </fieldset>
+
+    <fieldset>
+        <label for="tingkat" class="form-label">Tingkat</label>
+        <select class="form-select form-select-sm" aria-label="Small select example" name="tingkat">
+            <option selected>Pilih Tingkat</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </fieldset>
 
     <!--Fungsi Email-->
     <fieldset>

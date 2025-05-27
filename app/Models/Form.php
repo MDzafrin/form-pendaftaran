@@ -12,6 +12,8 @@ class Form extends Model
     protected $fillable = [
         'name',
         'gender',
+        'prodi',
+        'tingkat',
         'email',
         'phone',
     ];

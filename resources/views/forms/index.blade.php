@@ -21,6 +21,7 @@
     <tr>
         <th>Nama</th>
         <th>Jenis Kelamin</th>
+        <th>Prodi & Tingkat</th>
         <th>Email</th>
         <th>phone</th>
         <th width="280px">Action</th>
@@ -34,6 +35,7 @@
     <tr>
         <td>{{ $form->name }}</td>
         <td>{{ $form->gender }}</td>
+        <td>{{ "$form->prodi - $form->tingkat" }}</td>
         <td>{{ $form->email }}</td>
         <td>{{ $form->phone }}</td>
         <td>
