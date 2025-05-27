@@ -13,7 +13,7 @@ class FormController extends Controller
     public function index()
     {
         //Retrieve the lastest forms from the database and paginate them
-        $forms = Form::latest()->paginate(3);
+        $forms = Form::latest()->paginate(5);
 
         //Pass the forms to the view
         return view('forms.index', compact('forms'))->with(request()->input('page'));

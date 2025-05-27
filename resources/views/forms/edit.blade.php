@@ -1,53 +1,53 @@
-@extends ('forms.layout')
-@section ('content')
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Edit Formulir Pendaftaran</h2>
+@extends('forms.layout')
+
+@section('content')
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="bi bi-pencil-square"></i> Edit Formulir Pendaftaran</h2>
+        <a href="{{ route('forms.index') }}" class="btn btn-success">
+            <i class="bi bi-arrow-left"></i> Kembali
+        </a>
+    </div>
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> Ada beberapa masalah dengan input Anda.
+            <ul class="mb-0 mt-2">
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-success" href="{{ route('forms.index') }}"> Kembali</a>
+    @endif
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form action="{{ route('forms.update', $form->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama Lengkap</label>
+                    <input type="text" name="name" value="{{ $form->name }}" class="form-control" placeholder="Nama Lengkap" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" value="{{ $form->email }}" class="form-control" placeholder="Email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Nomor Telepon</label>
+                    <input type="text" name="phone" value="{{ $form->phone }}" class="form-control" placeholder="Nomor Telepon" required>
+                </div>
+
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save"></i> Simpan Perubahan
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
-
-@if ($errors->any())
-<div class="alert alert-danger">
-    <strong>Whoops!</strong> Ada beberapa masalah dengan input Anda.<br><br>
-    <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-</div>
-@endif
-
-<form action="{{ route('forms.update', $form->id) }}" method="POST">
-    @csrf
-    @method('PUT')
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Nama:</strong>
-                <input type="text" name="name" value="{{ $form->name }}" class="form-control" placeholder="Nama Lengkap">
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Email:</strong>
-                <input type="email" name="email" value="{{ $form->email }}" class="form-control" placeholder="Email">
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group  ">
-                <strong>Phone:</strong>
-                <input type="text" name="phone" value="{{ $form->phone }}" class="form-control" placeholder="Nomor Telepon">    
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            <button type="submit" class="btn btn-primary">Simpan Perubahan</button> 
-        </div>
-    </div>
-</form>
 @endsection
