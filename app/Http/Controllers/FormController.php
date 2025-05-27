@@ -38,8 +38,10 @@ class FormController extends Controller
         //validate the input
         $request->validate([
             'name' => 'required',
+            'gender'=> 'required',
             'email' => 'required',
             'phone' => 'required',
+            
         ]);
 
         //create a new form in the database

@@ -18,19 +18,18 @@
         Looks good!
     </div>-->
 
-    <!--Fungsi Jenis Kelamin
-    <form action="/action_page.php">
+    <!--Fungsi Jenis Kelamin-->
     <fieldset>    
     <legend for="jenis-kelamin" class="form-label">Jenis Kelamin</legend>
     <div class="form-check">
-        <label for="radioDefault1"><input id="laki-laki" type="radio" name="radio" class="inline" checked/>Laki-Laki</label>
+        <label for="radioDefault1"><input id="laki-laki" value="male" type="radio" name="gender" class="inline" checked/>Laki-Laki</label>
     </div>
 
     <div class="form-check">
-        <label for="radioDefault2"><input id="perempuan" type="radio" name="radio" class="inline" />Perempuan</label>
+        <label for="radioDefault2"><input id="perempuan" value="female" type="radio" name="gender" class="inline" />Perempuan</label>
     </div>
     </fieldset>
-    </form>-->
+    
 
     <!--Fungsi Pemilihan Prodi Dan Tingkat
     <fieldset>
@@ -87,17 +86,10 @@
     </fieldset>-->
 
     <!--Submit Button-->
-    <div class="col-12">
+    <div class="col-12 pt-5">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
-
-    <form action="{{ route('forms.store') }}" method="POST">
-        @csrf
        
-    
-
-       
-
 </form>
 
 
