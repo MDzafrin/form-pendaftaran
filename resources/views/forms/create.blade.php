@@ -36,7 +36,7 @@
     <legend for="tingkat-dan-prodi" class="form-label">Pilih Tingkat Dan Prodi </legend>
     <select class="form-select form-select-lg mb-3" aria-label="Large select example" name="prodi">
         <option selected>Pilih Prodi</option>
-        <option value="MI">Manajemen Industri</option>
+        <option value="MANIS">Manajemen Industri</option>
         <option value="TRM">Teknologi Rekayasa Mekatronika</option>
         <option value="TMI">Teknik Mesin Industri</option>
     </select>
