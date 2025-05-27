@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>FORMULIR  /PENDAFTARAN</h1>
+<h1>FORMULIR PENDAFTARAN LOMBA</h1>
 
 
 <form action="{{ route('forms.store') }}" method="POST">
