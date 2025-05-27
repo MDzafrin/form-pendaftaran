@@ -23,7 +23,7 @@
         <th>Jenis Kelamin</th>
         <th>Prodi & Tingkat</th>
         <th>Email</th>
-        <th>phone</th>
+        <th>No phone</th>
         <th width="280px">Action</th>
     </tr>
     @if ($forms->isEmpty())
