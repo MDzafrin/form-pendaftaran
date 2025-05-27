@@ -44,7 +44,7 @@ class FormController extends Controller
             'email' => 'required',
             'phone' => 'required',
             'lomba' => 'required',
-            'file' => 'required|mimes:pdf,doc,docx|max:2048', 
+            'file' => 'required', 
             
         ]);
 

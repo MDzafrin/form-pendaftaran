@@ -5,7 +5,7 @@
 <h1>FORMULIR PENDAFTARAN LOMBA</h1>
 
 
-<form action="{{ route('forms.store') }}" method="POST">
+<form action="{{ route('forms.store') }}" method="POST" enctype="multipart/form-data">
     @csrf   
     <!--Fungsi Nama-->
     <div class="mb-3">

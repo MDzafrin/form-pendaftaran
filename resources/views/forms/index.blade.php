@@ -25,7 +25,6 @@
         <th>Email</th>
         <th>No phone</th>
         <th>Jenis Lomba<th>
-        <th>File Foto</th>
         <th width="280px">Action</th>
     </tr>
     @if ($forms->isEmpty())
@@ -41,7 +40,6 @@
         <td>{{ $form->email }}</td>
         <td>{{ $form->phone }}</td>
         <td>{{ $form->lomba }}</td>
-        <td>{{ $form->file }}</td>
         <td>
             <form action="{{ route('forms.destroy', $form->id) }}" method="POST" class="d-inline">
                 <a class="btn btn-info" href="{{ route('forms.show', $form->id) }}">Show</a>
