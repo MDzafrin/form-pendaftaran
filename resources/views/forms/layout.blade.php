@@ -104,7 +104,7 @@
 
   <!-- Footer -->
   <footer>
-    &copy; {{ date('Y') }} <a href="#">Manufaktur Competition</a>. All rights reserved.
+    &copy; {{ date('Y') }} <a href="https://atmicikarang.ac.id/">Manufaktur Competition</a>. All rights reserved.
   </footer>
 
   @stack('scripts')
