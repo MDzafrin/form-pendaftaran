@@ -13,34 +13,34 @@
   
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">MANUFAKTUR COMPETITION</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon text-light"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Kompetisi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
-        </ul>
-      </div>
+  <header class="header-container">
+    <div class="logo-title">
+      <img id="logo" alt="Logo ATMI Cikarang" src="https://atmicikarang.ac.id/wp-content/uploads/2024/10/cropped-Logo-Polin-ATMI.png">
+      <h1>POLITEKNIK ATMI CIKARANG</h1>
     </div>
-  </nav>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">INFO</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
+    <div class="container" >
       <h1>EVENT MANUFAKTUR COMPETITION</h1>
       <h1>POLITEKNIK INDUSTRI ATMI CIKARANG</h1>
       <p>“Eksplorasi Teknologi Manufaktur & Jadilah bagian dari perubahan Masa Depan.”</p>
+      {{-- <img src="https://unsplash.com/photos/a-man-wearing-a-helmet-and-welding-equipment-vY-WNTNfXR0/download?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&force=true&w=640" alt="Hero Image" class="hero-image"> --}}
     </div>
   </section>
 
+
   <!-- Main Content Section -->
-  <div class="container content-wrapper">
+  {{-- <div class="container content-wrapper">
     <h2 class="section-title">Informasi Kompetisi</h2>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
     <!-- Yield content from child views -->
     <div class="mt-5">
