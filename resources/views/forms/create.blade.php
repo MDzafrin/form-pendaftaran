@@ -55,7 +55,7 @@
     <!--Fungsi Email-->
     <fieldset>
         <div class="mb-3">
-            <legend for="exampleFormControlInput1" class="form-label">Email address</legend>
+            <legend for="exampleFormControlInput1" class="form-label">Email Address</legend>
             <input name= "email" type="email" class="form-control" id="email" placeholder="nama@example.com">
         </div>
     </fieldset>
