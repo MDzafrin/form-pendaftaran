@@ -20,11 +20,11 @@
 <table class="table table-bordered">
     <tr>
         <th width="280px">Nama</th>
-        <th>Jenis Kelamin</th>
-        <th>Prodi & Tingkat</th>
-        <th>Email</th>
-        <th>No phone</th>
-        <th>Jenis Lomba<th>
+        <th width="150">Jenis Kelamin</th>
+        <th width="200">Prodi & Tingkat</th>
+        <th width="150">Email</th>
+        <th width="150">No phone</th>
+        <th width="150">Jenis Lomba<th>
         <th width="280px">Action</th>
     </tr>
     @if ($forms->isEmpty())
