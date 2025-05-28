@@ -12,24 +12,61 @@
 </div>
 
 @if ($message = Session::get('success'))
-<div class="alert alert-success">
-    <p>{{ $message }}</p>
-</div>
+    <div class="alert alert-success">
+        <p>{{ $message }}</p>
+    </div>
 @endif
 
 <table class="table table-bordered">
+    <tr class="text-center">
+        <th>Nama</th>
+        <th>Jenis Kelamin</th>
+        <th>Prodi & Tingkat</th>
+        <th>Email</th>
+        <th>No HP</th>
+        <th>Lomba</th>
+        <th width="280px">Action</th>
+    </tr>
+    @if ($forms->isEmpty())
+        <td colspan="7" class="text-center">
+            Tidak ada data formulir yang tersedia.
+        </td>
+    @else
+    @foreach($forms as $form)
     <tr>
-        <th width="280px">Nama</th>
-        <th width="150">Jenis Kelamin</th>
-        <th width="200">Prodi & Tingkat</th>
-        <th width="150">Email</th>
-        <th width="150">No phone</th>
-        <th width="150">Jenis Lomba<th>
+        <td>{{ $form->name }}</td>
+        <td>{{ $form->gender }}</td>
+        <td>{{ "$form->prodi - $form->tingkat" }}</td>
+        <td>{{ $form->email }}</td>
+        <td>{{ $form->phone }}</td>
+        <td>{{ $form->lomba }}</td>
+        <td>
+            <form action="{{route('forms.destroy', $form->id) }}" method="POST">
+                <a class="btn btn-info" href="{{route('forms.show', $form->id) }}">Show</a>
+                <a class="btn btn-primary" href="{{ route('forms.edit', $form->id) }}">Edit</a>
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </td>
+    </tr>
+    @endforeach
+    @endif 
+</table>
+
+{{-- <table class="table table-bordered">
+    <tr class="text-center">
+        <th>Nama</th>
+        <th>Jenis Kelamin</th>
+        <th>Prodi & Tingkat</th>
+        <th>Email</th>
+        <th>No phone</th>
+        <th>Jenis Lomba<th>
         <th width="280px">Action</th>
     </tr>
     @if ($forms->isEmpty())
     <tr>
-        <td colspan="4" class="text-center">Tidak ada data formulir yang tersedia.</td>
+        <td colspan="7" class="text-center">Tidak ada data formulir yang tersedia.</td>
     </tr>
     @else
     @foreach ($forms as $form)
@@ -52,7 +89,7 @@
     </tr>
     @endforeach
     @endif
-</table>
+</table> --}}
 
 {{ $forms->links() }}
 @endsection
