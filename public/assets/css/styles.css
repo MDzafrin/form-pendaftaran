@@ -74,9 +74,9 @@ h1 {
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('https://unsplash.com/photos/a-man-wearing-a-helmet-and-welding-equipment-vY-WNTNfXR0') center/cover no-repeat;
-  padding: 100px 20px;
+  padding: 150px 20px;
   text-align: center;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .hero h1 {
@@ -89,6 +89,7 @@ h1 {
   font-size: 1.2rem;
   max-width: 700px;
   margin: auto;
+  color: #fff;
 }
 
 .section-title {
