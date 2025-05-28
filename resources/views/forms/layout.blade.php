@@ -5,87 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MANUFAKTUR COMPETITION</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <style>
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('https://images.unsplash.com/photo-1556012018-5975c898a444?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      padding: 120px 20px;
-      color: #fff;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3.8rem;
-      font-weight: bold;
-      color: #ffd700;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.3rem;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .content-wrapper {
-      padding: 60px 15px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 40px;
-      color: #2c3e50;
-    }
-
-    .card-custom {
-      background-color: #ffffff;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      border: none;
-      border-radius: 10px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .card-custom:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-
-    .card-body h5 {
-      font-size: 1.25rem;
-      color: #0056b3;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: #eee;
-      padding: 30px 0;
-      text-align: center;
-    }
-
-    footer a {
-      color: #ffd700;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    footer a:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-  </style>
-
-  @stack('styles')
+  <link rel="stylesheet" href="{{ URL::asset('assets/css/styles.css')}}">
+ 
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">MANUFAKTUR COMPETITION</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kompetisi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -96,17 +37,48 @@
     </div>
   </section>
 
-  <!-- Main Content -->
-    <div class="container content-wrapper">
-        @yield('content')
+  <!-- Main Content Section -->
+  <div class="container content-wrapper">
+    <h2 class="section-title">Informasi Kompetisi</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-custom h-100">
+          <div class="card-body">
+            <h5 class="card-title">Kategori Lomba</h5>
+            <p class="card-text">Berbagai kategori lomba yang menantang kreativitas dan keterampilan teknis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-custom h-100">
+          <div class="card-body">
+            <h5 class="card-title">Jadwal Acara</h5>
+            <p class="card-text">Rangkaian acara yang disusun untuk pengalaman kompetitif yang maksimal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-custom h-100">
+          <div class="card-body">
+            <h5 class="card-title">Pendaftaran</h5>
+            <p class="card-text">Informasi lengkap mengenai cara mendaftar dan syarat peserta.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Yield content from child views -->
+    <div class="mt-5">
+      @yield('content')
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
     &copy; {{ date('Y') }} <a href="#">Manufaktur Competition</a>. All rights reserved.
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   @stack('scripts')
 </body>
 </html>
