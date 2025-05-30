@@ -4,19 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MANUFAKTUR COMPETITION</title>
-  {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" /> --}}
   <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{ URL::asset('assets/css/styles.css')}}">
- 
-</head>
-<body>
-  
 
   <!-- Navigation Bar -->
   <header class="header-container">
     <div class="logo-title">
       <img id="logo" alt="Logo ATMI Cikarang" src="https://atmicikarang.ac.id/wp-content/uploads/2024/10/cropped-Logo-Polin-ATMI.png">
-      <h1>POLITEKNIK ATMI CIKARANG</h1>
+      <h1 style="font-size: 1.5rem;">POLITEKNIK ATMI CIKARANG</h1>
     </div>
     <nav>
       <ul class="nav-links">
@@ -27,20 +22,17 @@
     </nav>
   </header>
 
-
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container" >
+    <div class="container">
       <h1>EVENT MANUFAKTUR COMPETITION</h1>
       <h1>POLITEKNIK INDUSTRI ATMI CIKARANG</h1>
       <p>“Eksplorasi Teknologi Manufaktur & Jadilah bagian dari perubahan Masa Depan.”</p>
-      {{-- <img src="https://unsplash.com/photos/a-man-wearing-a-helmet-and-welding-equipment-vY-WNTNfXR0/download?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&force=true&w=640" alt="Hero Image" class="hero-image"> --}}
     </div>
   </section>
 
-
-  <!-- Main Content Section -->
-  {{-- <div class="container content-wrapper">
+   <!-- Main Content Section -->
+  <div class="container content-wrapper">
     <h2 class="section-title">Informasi Kompetisi</h2>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
@@ -67,7 +59,7 @@
           </div>
         </div>
       </div>
-    </div> --}}
+    </div>
 
     <!-- Yield content from child views -->
     <div class="mt-5">
