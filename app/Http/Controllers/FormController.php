@@ -35,6 +35,10 @@ class FormController extends Controller
      */
     public function store(Request $request)
     {
+        //check if the file is uploaded
+        // return $request->file('image')->store('post-images');
+
+
         //validate the input
         $request->validate([
             'name' => 'required',
@@ -44,12 +48,23 @@ class FormController extends Controller
             'email' => 'required',
             'phone' => 'required',
             'lomba' => 'required',
-            'file' => 'required', 
-            
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',    
         ]);
 
+        $image_form = time().'.'.$request->image->extension();
+        $request->image->move(public_path('post-images'), $image_form);
+
         //create a new form in the database
-        Form::create($request->all());
+        Form::create([
+            'name' => $request->name,
+            'gender' => $request->gender,
+            'prodi' => $request->prodi,
+            'tingkat' => $request->tingkat,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'lomba' => $request->lomba,
+            'image' => $image_form,
+        ]);
 
         //redirect to the form index page with a success message
         return redirect()->route('forms.index')->with('success', 'Form submitted successfully!');

@@ -80,14 +80,16 @@
     
 
     <!--Upload Profile picture-->
-    <fieldset>
-        <legend for="upload-profile" class="form-label pt-3" >Upload Foto KTM</legend>
     <div class="mb-3"> 
-        <label for="formFile" class="form-label"></label>
-        <input class="form-control" type="file" name="file" id="formFile">
-        
+        <label for="image" class="form-label">Upload image</label>
+        <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" id="image">
+        @error('image')
+            <div class="invalid-feedback">
+                {{ $message }}
+            </div>
+        @enderror
     </div>
-    </fieldset>
+    
 
     <!--Submit Button-->
     <div class="col-12 pt-5">

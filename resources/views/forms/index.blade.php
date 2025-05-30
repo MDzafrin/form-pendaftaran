@@ -25,6 +25,7 @@
         <th>Email</th>
         <th>No HP</th>
         <th>Lomba</th>
+        <th>Image</th>
         <th width="280px">Action</th>
     </tr>
     @if ($forms->isEmpty())
@@ -40,6 +41,14 @@
         <td>{{ $form->email }}</td>
         <td>{{ $form->phone }}</td>
         <td>{{ $form->lomba }}</td>
+        <td>
+            @if ($form->image)
+                <img src="{{ asset('post-images/' . $form->image) }}" alt="{{ $form->image }}" style="width: 100px; height:auto;">
+            @else
+                NO Image
+             @endif
+            
+        </td>
         <td>
             <form action="{{route('forms.destroy', $form->id) }}" method="POST">
                 <a class="btn btn-info" href="{{route('forms.show', $form->id) }}">Show</a>

@@ -51,7 +51,11 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>File Foto:</strong>
-            <img src="{{ asset('storage/' . $form->file) }}" alt="Foto" class="img-thumbnail" style="max-width: 200px; max-height: 200px;">
+             @if ($form->image)
+                <img src="{{ asset('post-images/' . $form->image) }}" alt="{{ $form->image }}" style="width: auto; height:auto;">
+            @else
+                NO Image
+             @endif
         </div>
     </div>
 @endsection

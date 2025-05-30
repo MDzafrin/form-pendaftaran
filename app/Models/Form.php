@@ -17,7 +17,7 @@ class Form extends Model
         'email',
         'phone',
         'lomba',
-        'file',
+        'image',
     ];
     
 }
