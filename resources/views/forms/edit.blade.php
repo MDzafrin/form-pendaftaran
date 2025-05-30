@@ -41,6 +41,43 @@
                     <input type="text" name="phone" value="{{ $form->phone }}" class="form-control" placeholder="Nomor Telepon" required>
                 </div>
 
+                <div class="mb-3">
+                    <label for="radioDefault1"><input id="laki-laki" value="Pria" type="radio" name="gender" class="inline" checked/>Laki-Laki</label>
+                    <label for="radioDefault2"><input id="perempuan" value="Wanita" type="radio" name="gender" class="inline" />Perempuan</label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="prodi" class="form-label">Prodi</label>
+                    <select class="form-select" name="prodi" required>
+                        <option value="" disabled selected>Pilih Prodi</option>
+                        <option value="MANIS" {{ $form->prodi == 'MANIS' ? 'selected' : '' }}>Manajemen Industri</option>
+                        <option value="TRM" {{ $form->prodi == 'TRM' ? 'selected' : '' }}>Teknologi Rekayasa Mekatronika</option>
+                        <option value="TMI" {{ $form->prodi == 'TMI' ? 'selected' : '' }}>Teknik Mesin Industri</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <label for="tingkat" class="form-label">Tingkat</label>
+                    <select class="form-select form-select-sm" aria-label="Small select example" name="tingkat">
+                        <option selected>Pilih Tingkat</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </fieldset>
+
+                <div class="mb-3">
+                    <label for="lomba" class="form-label">Jenis Lomba</label>
+                    <select class="form-select" name="lomba" required>
+                        <option value="" disabled selected>Pilih Jenis Lomba</option>
+                        <option value="Sawing" {{ $form->lomba == 'Sawing' ? 'selected' : '' }}>Sawing</option>
+                        <option value="Welding" {{ $form->lomba == 'Welding' ? 'selected' : '' }}>Welding</option>
+                        <option value="Kerajina Recycle" {{ $form->lomba == 'Kerajina Recycle' ? 'selected' : '' }}>Kerajinan Recycle</option>
+                    </select>
+                </div>
+
+                <div 
+                
                 <div class="text-end">
                     <button type="submit" class="btn btn-primary">
                         <i class="bi bi-save"></i> Simpan Perubahan

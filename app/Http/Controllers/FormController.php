@@ -83,6 +83,8 @@ class FormController extends Controller
             'name' => 'required',
             'email' => 'required',
             'phone' => 'required',
+            'gender' => 'required',
+            'prodi' => 'required',
         ]);
         //update the form in the database
         $form->update($request->all());
