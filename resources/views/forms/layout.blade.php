@@ -13,13 +13,17 @@
       <img id="logo" alt="Logo ATMI Cikarang" src="https://atmicikarang.ac.id/wp-content/uploads/2024/10/cropped-Logo-Polin-ATMI.png">
       <h1 style="font-size: 1.5rem;">POLITEKNIK ATMI CIKARANG</h1>
     </div>
+
     <nav>
-      <ul class="nav-links">
-        <li><a href="#">INFO</a></li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">DROPDOWN</a>
+      <ul class="dropdown-menu">
+      <li><a class="dropdown-item1" href="{{'forms.create'}}">HOME</a></li>
+        <li><a class="dropdown-item2" href="{{'forms'}}">SHOW INFO</a></li>
       </ul>
+      </li>
     </nav>
+
   </header>
 
   <!-- Hero Section -->
