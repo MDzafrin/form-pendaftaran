@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>FORMULIR PENDAFTARAN LOMBA</h1>
+<h1 class="h1-2">FORMULIR PENDAFTARAN LOMBA</h1>
 
 
 <form action="{{ route('forms.store') }}" method="POST" enctype="multipart/form-data">

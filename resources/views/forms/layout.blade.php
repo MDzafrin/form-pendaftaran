@@ -33,31 +33,31 @@
 
    <!-- Main Content Section -->
   <div class="container content-wrapper">
-    <h2 class="section-title">Informasi Kompetisi</h2>
+    {{-- <h2 class="section-title">Informasi Kompetisi</h2> --}}
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
-        <div class="card card-custom h-100">
+        {{-- <div class="card card-custom h-100">
           <div class="card-body">
             <h5 class="card-title">Kategori Lomba</h5>
             <p class="card-text">Berbagai kategori lomba yang menantang kreativitas dan keterampilan teknis.</p>
           </div>
-        </div>
+        </div> --}}
       </div>
       <div class="col-md-6 col-lg-4">
-        <div class="card card-custom h-100">
+        {{-- <div class="card card-custom h-100">
           <div class="card-body">
             <h5 class="card-title">Jadwal Acara</h5>
             <p class="card-text">Rangkaian acara yang disusun untuk pengalaman kompetitif yang maksimal.</p>
           </div>
-        </div>
+        </div> --}}
       </div>
       <div class="col-md-6 col-lg-4">
-        <div class="card card-custom h-100">
+        {{-- <div class="card card-custom h-100">
           <div class="card-body">
-            <h5 class="card-title">Pendaftaran</h5>
-            <p class="card-text">Informasi lengkap mengenai cara mendaftar dan syarat peserta.</p>
+            {{-- <h5 class="card-title">Pendaftaran</h5>
+            <p class="card-text">Informasi lengkap mengenai cara mendaftar dan syarat peserta.</p> 
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
 

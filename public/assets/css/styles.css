@@ -3,7 +3,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #f0f0f0;
   /* color: #333; */
-  margin: 2px 2px 2px 2px;
+  
 }
 .hero-image {
   width: 100%;
@@ -85,6 +85,16 @@ h1 {
   margin-bottom: 15px;
 }
 
+.h1-2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
 .hero p {
   font-size: 1.2rem;
   max-width: 700px;
@@ -98,6 +108,15 @@ h1 {
   text-align: center;
   margin: 60px 0 30px;
   color: #2c3e50;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mb-3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-label{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content-wrapper {
