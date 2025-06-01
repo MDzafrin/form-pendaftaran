@@ -19,7 +19,7 @@
         <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">DROPDOWN</a>
       <ul class="dropdown-menu">
       <li><a class="dropdown-item1" href="{{'forms.create'}}">HOME</a></li>
-        <li><a class="dropdown-item2" href="{{'forms'}}">SHOW INFO</a></li>
+        <li><a class="dropdown-item2" href="{{'forms.index'}}">SHOW INFO</a></li>
       </ul>
       </li>
     </nav>

@@ -29,7 +29,7 @@
         <th width="280px">Action</th>
     </tr>
     @if ($forms->isEmpty())
-        <td colspan="7" class="text-center">
+        <td colspan="8" class="text-center">
             Tidak ada data formulir yang tersedia.
         </td>
     @else
