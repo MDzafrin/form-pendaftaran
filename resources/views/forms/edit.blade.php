@@ -75,8 +75,6 @@
                         <option value="Kerajina Recycle" {{ $form->lomba == 'Kerajina Recycle' ? 'selected' : '' }}>Kerajinan Recycle</option>
                     </select>
                 </div>
-
-                <div 
                 
                 <div class="text-end">
                     <button type="submit" class="btn btn-primary">

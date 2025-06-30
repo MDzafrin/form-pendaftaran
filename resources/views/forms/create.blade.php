@@ -81,13 +81,14 @@
 
     <!--Upload Profile picture-->
     <div class="mb-3"> 
-        <label for="image" class="form-label">Upload image</label>
+        <label for="image" class="form-label">Upload Kartu Tanda Mahasiswa</label>
         <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" id="image">
         @error('image')
             <div class="invalid-feedback">
                 {{ $message }}
             </div>
         @enderror
+        <p class="announce" >Foto yang sudah di Upload tidak dapat di edit</p>
     </div>
     
 

@@ -178,3 +178,10 @@ footer a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
+
+.announce {
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 1rem;
+}
